@@ -1,0 +1,21 @@
+\section{Propiedades de las funciones continuas}
+$f:A\rightarrow\R$, $x\in A$, son equivalentes
+\begin{itemize}
+	\item $f$ es continua en $x$
+	\item Para toda sucesión $\{x_n\}\rightarrow x$ de puntos de $A$ y monótona, se tiene que $\{f(x_n)\} \rightarrow f(x)$
+	\item $ \forall\epsilon >0, \ \exists\delta >0 \ : \ y\in A, \ |y-x|<\delta \implies |f(y)-f(x)|<\epsilon $
+\end{itemize}
+
+\textbf{Conservación del signo.} $f:A\rightarrow\R$ continua en $x$, $\exists\delta>0 \ : \ \forall y\in A$ con $|y-x|<\delta\implies f(y)>0$
+
+\textbf{Bolzano.} $a,b\in\R,a<b$ y $f:[a,b]\rightarrow\R$ continua, $f(a)<0,f(b)>0\implies \exists c\in[a,b] \ : \ f(c)=0$
+
+\subsection{Teorema del valor intermedio}
+Sea $f:A\rightarrow\R$ una función continua. $I\subset A$ intervalo no trivial $\implies f(I)$ es un intervalo.
+
+$f:I\rightarrow\R$ tiene la propiedad del valor intermedio cuando $\forall J\subset I$, $f(J)$ es un intervalo.
+
+$f \text{ definida en un intervalo, continua} \implies \text{cumple la propiedad del valor intermedio (Recíproco falso)}$
+
+\subsection{Teorema de Weierstrass}
+Sean $a,b\in\R, a<b$ y $f:[a,b]\rightarrow\R$ continua, entonces el intervalo $f([a,b])$ es cerrado y acotado.

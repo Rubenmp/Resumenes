@@ -1,0 +1,55 @@
+\section{Sucesiones convergentes}
+Una sucesión $\{ x_n \} $ es una aplicación de $\N$ a otro conjunto, si es de números reales, $\R$.
+$$ \{x_n\}\rightarrow x\in\R \Longleftrightarrow
+\forall\epsilon >0,\ \exists m\in\N \ : \ n\geq m 
+\implies |x_n-x|<\epsilon 
+\hspace{1.5cm}
+x = lim\{x_n\} \text{ es único}
+$$
+Converge a $x$ si
+$\forall\epsilon>0, \ A_{\epsilon} = \{ n\in\N \ : \ |x_n-x|\geq \epsilon \}$
+es finito. 
+Esta expresión es útil para negar.
+
+
+\subsection{Sucesiones parciales}
+Dada una aplicación $\sigma : \N\rightarrow\N$ con $\sigma (n) < \sigma (n+1)$ (estrictamente creciente) obtenemos la sucesión parcial $\{x_{\sigma (n)}\}$. Si la sucesión inicial tiene límite la parcial también y es el mismo.
+
+Si $\{x_n\}$ admite parcial no convergente o parciales con límites diferentes, entonces $\{x_n\}$ no converge.
+$$ \{x_n\} \rightarrow x \Longleftrightarrow \{x_{k+n}\} \rightarrow x 
+\hspace{2cm}
+\{x_n\} \rightarrow x \Longleftrightarrow 
+\{x_{2n}\} \rightarrow x \ y \ 
+\{x_{2n-1}\} \rightarrow x
+$$
+
+\subsection{Sucesiones acotadas}
+Una sucesión está acotada cuando está mayorada y minorada, equivalente a que $\{|x_n|\}$ esté mayorada.
+Toda sucesión convergente está acotada, el recíproco es falso.
+Una sucesión está acotada si fijando $m\in\N$ $\{x_n \ : \ n\geq m\}$ está acotado.
+$$ \{x_n\}\rightarrow x \Longleftrightarrow \{|x_n-x|\} \rightarrow 0 \hspace{2cm}
+\{x_n\}\rightarrow x \implies \{|x_n|\}\rightarrow |x| 
+\text{ (Recíproco falso)} $$
+Sean $\{x_n\}$ e $\{y_n\}$ sucesiones convergentes, $\alpha,\beta\in\R$
+
+Si $\{y_n\}$ está acotada y $\{z_n\}\rightarrow 0$, entonces $\{y_nz_n\}\rightarrow 0$
+
+Si $\lim_{\substack{n\rightarrow\infty}} \{y_n\} < \lim_{\substack{n\rightarrow\infty}} \{x_n\}$, 
+ existe $m\in\N$ tal que $y_n<x_n$ para $n\geq m$
+
+Si $\{n\in\N \ : \ x_n\leq y_n\}$ es infinito, entonces $\limn \{x_n\} \leq \limn \{y_n\}$
+
+De la desigualdad estricta $x_n<y_n$ no podemos deducir
+$\limn \{x_n\} < \limn \{y_n\}$
+
+\begin{itemize}
+	\item Si $\{n\in\N\ : \ x_n\leq\beta \}$ es infinito, entonces $\limn \{x_n\}\leq\beta$
+	\item Si $\{n\in\N\ : \ \alpha\leq x_n \}$ es infinito, entonces $\alpha \leq \limn \{x_n\}$	
+\end{itemize}
+
+Si $\{x_n\}\rightarrow \alpha$, $\{z_n\}\rightarrow \alpha$ y $x_n \leq y_n \leq z_n \ \forall n\in\N$, entonces $\{y_n\}\rightarrow \alpha$.
+
+Si $\emptyset\not =A\subseteq\R$ está mayorado, $\exists\{x_n\}$ de elementos de $A$ tal que $\{x_n\}\rightarrow sup(A)$ (resp. minorado, inf)
+
+$\forall x\in A\subseteq\R$, $A\not =\emptyset$ denso en $\R$, existen sucesiones $\{r_n\},\{s_n\}$ de elementos de $A$ tales que
+$$ \{r_n\} < x < \{s_n\} \ \forall n\in\N, \ x=\limn \{r_n\} = \limn \{s_n\} $$

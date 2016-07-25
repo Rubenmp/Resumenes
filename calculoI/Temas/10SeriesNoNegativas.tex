@@ -1,0 +1,49 @@
+\section{Series de términos no negativos}
+Una serie de términos no negativos es convergente si, y sólo si, está mayorada.
+
+\subsection{Criterio de comparación}
+(1) Si $0\leq a_n\leq b_n \ \forall n\in\N$ y $\sum_{n\geq 1} b_n$ converge, entonces $\sum_{n\geq 1} a_n$ converge a $a\in\R^+, \ a\leq \sum_{n\geq 1}b_n$
+
+(2) $\sum_{n\geq 1}a_n$ y $\sum_{n\geq 1}b_n$ series de números reales. Supongamos que existe $p\in\N \ : \ \forall k>p, \ 0\leq a_n\leq b_n$ y la serie $\sum_{n\geq 1} b_n$ es convergente, entonces $\sum_{n\geq 1} a_n$ es convergente.
+
+(3)\textbf{[Paso a límite]} 
+Sean $a_n\geq0,b_n>0 \ \forall n\in\N$, suponemos que $\{a_n/b_n\}\rightarrow L\in\R^+_0$
+\begin{itemize}
+	\item Si $L>0$ la convergencia de $\sum_{n\geq 1}a_n$ equivale a la de $\sum_{n\geq 1}b_n$
+	\item Si $L=0$ y $\sum_{n\geq 1}b_n$ converge, entonces $\sum_{n\geq 1}a_n$ converge
+\end{itemize} 
+
+\subsection{Criterio de la raíz para series (Cauchy)}
+(1) Si $\{\sqrt[n]{a_n}\}$ no está acotada o lo está con $\liminf \{\sqrt[n]{a_n}\} > 1$, entonces $\{a_n\} \not\rightarrow 0$, $\sum_{n\geq 1}a_n$ diverge
+
+(2) Si $\{\sqrt[n]{a_n}\}$ está acotada con $\limsup \{\sqrt[n]{a_n}\} < 1$, entonces $\sum_{n\geq 1}a_n$ converge
+
+\begin{itemize}
+	\item Sea $a_n\geq 0, \ \forall n\in\N$ y $\{\sqrt[n]{a_n}\}$ convergente
+	
+	(1) Si $\limn \sqrt[n]{a_n} > 1$, entonces $\{a_n\} \not\rightarrow 0$, luego $\sum_{n\geq 1} a_n$ diverge
+	
+	(2) Si $\limn \sqrt[n]{a_n} < 1$, entonces $\sum_{n\geq 1}$ es convergente
+\end{itemize}
+
+\subsection{Criterio del cociente o de D'Alembert}
+Sea $a_n>0, \ \forall n\in\N$ y $\{\frac{a_{n+1}}{a_n}\}$ acotada
+
+(1) Si $\liminf \{\frac{a_{n+1}}{a_n}\} > 1$, entonces $\{a_n\} \not\rightarrow 0$ y $\sum_{n\geq 1}a_n$ diverge
+
+(2) Si $\limsup \{\frac{a_{n+1}}{a_n}\} < 1$, entonces  $\sum_{n\geq 1}a_n$ es convergente
+
+\begin{itemize}
+	\item Sea $a_n > 0 \ \forall n\in\N$ y $\{\frac{a_{n+1}}{a_n}\}$ convergente
+	
+	(1) Si $\limn \{\frac{a_{n+1}}{a_n}\} > 1$, entonces $\{a_n\}$ no converge a $0$, luego $\sum_{n\geq 1} a_n$ diverge
+	
+	(2) Si $\limn \{\frac{a_{n+1}}{a_n}\} < 1$,	entonces $\sum_{n\geq 1}a_n$ converge
+\end{itemize}
+
+\subsection{Criterio de condensación de Cauchy}
+Si $\{a_n\}$ es decreciente con números positivos, la convergencia de $\sum_{n\geq 1} a_n$ equivale a la de $\sum_{n\geq 0}2^na_n$
+$$ e = \sum_{n=0}^{\infty} \frac{1}{n!} \hspace{1cm}
+e - \sum_{n=0}^{p} \frac{1}{n!} < \frac{1}{p!p} \hspace{1cm}
+e = \limn \left(1 + \frac{1}{n}\right)^n
+$$

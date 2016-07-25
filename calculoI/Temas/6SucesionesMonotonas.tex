@@ -1,0 +1,39 @@
+\section{Sucesiones monótonas}
+Una sucesión $\{x_n\}$ es creciente (resp. decreciente) si $x_n\leq x_{n+1} \text{(resp. $x_n\geq x_{n+1} $)}\ \ \forall n\in\N$. Es monótona si es creciente o decreciente.
+Una sucesión creciente está minorada, una decreciente está mayorada.
+
+\begin{itemize}
+	\item Toda sucesión monótona y acotada es convergente, a su supremo o  ínfimo.
+	\item Toda sucesión de números reales admite una sucesión parcial monótona.
+\end{itemize}
+
+\textbf{Teorema de Bolzano-Weierstrass}
+
+Toda sucesión acotada de números reales admite una sucesión parcial convergente.
+
+\subsection{Sucesiones de Cauchy}
+\begin{center}
+$ \forall\epsilon >0, \ \exists m\in\N \ : \ p,q\geq m \implies |x_p-x_q| < \epsilon $
+\end{center}
+$$ \text{Sucesión convergente} \implies \text{Sucesión de Cauchy (}\Longleftarrow \text{Complitud de $\R$)} $$
+
+\subsection{Límites superior e inferior}
+\begin{center}
+$ \alpha_n = \inf\{x_k \ : \ k\geq n\} \text{ creciente y mayorada}
+\hspace{1cm}
+\beta_n  = \sup\{x_k \ : \ k\geq n\} \text{ decreciente y minorada} $
+\end{center}
+
+Los límites de dichas sucesiones son los límites inferior y superior. Son equivalentes:
+\begin{center}
+	 $\liminf \{x_n\} = \limsup \{x_n\} 
+	\Longleftrightarrow
+	\{x_n\} \text{ es convergente}$
+\end{center}
+$$ \liminf \{x_n\} \leq \lim \{x_{\sigma (n)}\} \leq \limsup \{x_n\} $$
+\textbf{Teorema de Bolzano-Weierstrass} (revisitado)
+
+Si $\{x_n\}$ es una sucesión acotada de números reales, entonces admite dos sucesiones parciales tales que
+$$ \{x_{\sigma (n)}\} \rightarrow \liminf \{x_n\} \hspace{1cm}
+   \{x_{\tau   (n)}\} \rightarrow \limsup \{x_n\}$$
+

@@ -1,0 +1,30 @@
+\section{Cálculo de límites}
+\subsection{Criterio de Stolz (no reversible)}
+Sea $\{p_n\}\rightarrow +\infty$, $0<p_n<p_{n+1} \ \forall n\in\N$, entonces $\forall\{x_n\}$ y $\forall L\in\R\cup \{+\infty\}\cup\{-\infty\}$
+$$ \left\{ \frac{x_{n+1}-x_n}{p_{n+1}-p_n} \right\} \rightarrow L \implies \left\{\frac{x_n}{p_n}\right\} \rightarrow L$$
+
+Para cualquier $x\in\R$ con $|x|>1$ y $p\in\N\hspace{0.5cm} \limn n^p/x^n = 0 $
+
+\subsection{Criterio de la media aritmética (Consecuencia de Stolz)}
+
+Dada $\{y_n\}$ y sus medias aritméticas $\sigma_n = \frac{1}{n}\sum_{k=1}^n y_k $. 
+
+Si $\{y_n\}\rightarrow L\in\R\cup\{\pm\infty\}$, entonces $\{\sigma_n\}\rightarrow L$, pero no para $\infty$ (Recíproco falso).
+
+\textbf{Lema}
+Si $x_n\in\R^+, \ \forall n\in\N$ y $\{\frac{x_{n+1}}{x_n}\}$ está acotada, entonces $\{\sqrt[n]{x_n}\}$ también está acotada y 
+$$ \liminf \left\{\frac{x_{n+1}}{x_n}\right\} \leq
+   \liminf \{\sqrt[n]{x_n}\} \leq \limsup \{\sqrt[n]{x_n}\}
+   \leq \limsup \left\{\frac{x_n+1}{x_n}\right\}
+$$
+\subsection{Criterio de la raíz para sucesiones}
+Si $\{x_n\} \in\R^+, \ \forall n\in\N$ y $\{x_{n+1}/x_n\}$ es convergente, entonces $\{\sqrt[n]{x_n}\}$ también es convergente y 
+$$ \limn \sqrt[n]{x_n} = \limn \frac{x_{n+1}}{x_n} $$
+Si $\{x_{n+1}/x_n\} \rightarrow +\infty$, entonces $\{\sqrt[n]{x_n}\} \rightarrow +\infty$. 
+$\{\sqrt[n]{x_n}\}$ puede ser convergente sin que $\{\frac{x_{n+1}}{x_n }\}$ lo sea.
+
+\subsection{Criterio de la media geométrica}
+Sea $y_n \in\R^+ \ \forall n\in\N$ y 
+$\mu_n = \sqrt[n]{ \prod_{k=1}^{n} y_k}$
+
+Si $\{y_n\} \rightarrow L\in\R\cup \{+\infty\}$, se tiene $\{\mu_n\} \rightarrow L$

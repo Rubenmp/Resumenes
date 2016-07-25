@@ -1,0 +1,21 @@
+\section{Convergencia absoluta y series alternadas}
+Una serie de números reales $\sum_{n\geq 1} x_n$ es absolutamente convergente cuando $\sum_{n\geq 1} |x_n|$ es convergente. 
+
+%Para las series geométricas convergencia y convergencia absoluta son nociones equivalentes.
+
+\textbf{Teorema.} Toda serie absolutamente convergente es convergente y se verifica
+$$ \left|\sum_{n\geq 1}^{\infty} x_n\right| \leq \sum_{n\geq 1}^{\infty} |x_n| $$
+
+\subsection{Series alternadas}
+Si queremos que una serie converja sin hacerlo absolutamente los conjuntos $\{n\in\N \ : \ x_n<0\}$ y $\{n\in\N \ : \ x_n>0\}$ deben ser infinitos.
+Serie alternada presenta un aspecto similar a $\sum_{n\geq 1}(-1)^n a_n$, la serie armónica alternada $\sum_{n\geq 1}\frac{(-1)^{n+1}}{n}$ es convergente pero no converge absolutamente.
+
+\textbf{Criterio de Leibniz.} Si $\{a_n\} \rightarrow 0$ y es decreciente, entonces $\sum_{n\geq 1} (-1)^n a_n$ es convergente
+
+\subsection{Convergencia incondicional}
+Una permutación de los naturales sería una aplicación $\pi : \N \rightarrow \N$ biyectiva. Una serie es incondicionalmente convergente cuando para cualquier permutación la serie reordenada $\sum_{n\geq 1}x_{\pi (n)}$ converge
+
+\textbf{Teorema.} Una serie de números reales es incondicionalmente convergente si, y sólo si, es absolutamente convergente. 
+Además, si la serie $\sum_{n\geq 1}x_n$ es absolutamente convergente, entonces, para toda permutación $\pi$ de los números naturales, se tiene que $\sum_{n=1}^{\infty}x_{\pi (n)} = \sum_{n=1}^{\infty}x_n$
+
+\textbf{Teorema de Riemann.} Sea $\sum_{n\geq 1}x_n$ una serie convergente, no absolutamente convergente, y fijemos $s\in\R$. Entonces existen permutaciones $\pi_+, \pi_-, \pi_s$ de los números naturales, tales que la serie $\sum_{n\geq 1}x_{\pi_+ (n)}$ diverge positivamente, la serie $\sum_{n\geq 1}x_{\pi_- (n)}$ diverge negativamente y la serie $\sum_{n\geq 1}x_{\pi_s (n)}$ converge, con $\sum_{n=1}^{\infty}x_{\pi_s (n)} = s$

@@ -1,0 +1,36 @@
+\section{Divergencia de sucesiones}
+La divergencia no es lo contrario de convergencia, véase 
+$\{ (-1)^n \}$. 
+Una sucesión $\{x_n\}$ no acotada no implica $\{1/x_n\} \rightarrow 0$, ejemplo
+$$ y_n = n+(-1)^n+1 \implies \{1/y_n\}\not\rightarrow 0 \text{ ya que } \{1/y_{2n-1}\}\rightarrow 1 $$
+Divergencia positiva equivale a que 
+$\{n\in\N \ : \ x_n\leq K\in\R \}$ sea finito.
+$$ \{x_n\}\rightarrow +\infty \Longleftrightarrow
+ \left[ \forall K\in\R, \ \exists m\in\N \ : n\geq m \implies \ x_n> K \right]$$
+$$ \{ |x_n| \} \rightarrow +\infty \Longleftrightarrow \{ x_n \} \rightarrow \infty$$
+Que una sucesión diverja no significa que lo haga positiva o negativamente. Ejemplo $\{ (-1)^nn \}$
+
+\subsection{Relación con otras sucesiones}
+Toda sucesión parcial de una sucesión divergente es divergente.
+Son equivalentes
+\begin{itemize}
+	\item $\{ x_n \}$ no es divergente
+	\item $\{ x_n \}$ admite una sucesión parcial acotada
+	\item $\{ x_n \}$ admite una sucesión parcial convergente
+\end{itemize} 
+Podemos encontrar una sucesión no mayorada, ni minorada y no divergente: 
+$$y_{3k-2}=k, \ y_{3k-1}=-k ,\  y_{3k}=0 \hspace{1cm} \underbrace{1,-1,0},\underbrace{2,-2,0},\underbrace{3,-3,0,}...$$
+Toda sucesión monótona es convergente o divergente.
+
+\subsection{Operaciones}
+$$ \{ x_n \} \text{ e } \{ y_n \} \text{ convergentes} \implies \{ x_n+y_n \} \text{ convergente } \hspace{1cm}\text{(Recíproco falso)}  $$
+$$ \text{Si } \{ x_n \}\rightarrow +\infty \text{ e } \{ y_n \} \text{ está minorada en }\R^+ \text{, entonces } \{ x_n+y_n \}\rightarrow +\infty, \ \{x_ny_n\}\rightarrow +\infty $$
+
+Toda sucesión puede expresarse como suma de dos divergentes, o como multiplicación de una que diverja positivamente y otra que converja a 0.
+$$ \{ x_n \}\rightarrow\infty,\ \{ y_n \}\rightarrow\lambda\in\R^* \implies \{ x_ny_n \}\rightarrow\infty $$
+$$\text{Si } x_n\in\R^+, \ \forall n\in\N\text{, entonces } \{ x_n \}\rightarrow 0 \Longleftrightarrow \{ 1/x_n \} \text{ es divergente} $$
+Sea $x_n\in\R^+_0, \ \forall n\in\N$ y sea $q\in\N$
+\begin{itemize}
+	\item $\{ x_n \}\rightarrow x\in\R^+_0 \implies \{ \sqrt[q]{x_n} \}\rightarrow \sqrt[q]{x}$
+	\item $\{ x_n \}\rightarrow +\infty \implies \{ \sqrt[q]{x_n} \}\rightarrow +\infty$	
+\end{itemize}

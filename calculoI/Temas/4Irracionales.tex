@@ -1,0 +1,58 @@
+\section{Supremo e ínfimo. Números irracionales}
+\subsection{Supremo e ínfimo}
+Dado $\emptyset\not = A\subset \R$, $A$ está mayorado si existe $y\in\R$ llamado mayorante tal que $y\geq a \ \forall a\in A$. Analogamente con minorado y minorante.
+ Mayorantes y minorantes no siempre son del conjunto.
+
+Si $A$ está mayorado y minorado está acotado.
+Si el conjuntos de mayorantes tiene mínimo, es el supremo, si $A$ está minorado, el máximo de los minorantes es el ínfimo.
+$$ a\leq y \ \ \forall a\in A \Longleftrightarrow sup(A)\leq y
+\hspace{2cm}
+x\leq a \ \ \forall a\in A \Longleftrightarrow x \leq inf(A)$$
+
+\textbf{Relación con máximo y mínimo (
+$\emptyset \not = A \subset \R , \ \alpha\in\R$)}
+$$ \alpha = max (A) \Longleftrightarrow \alpha\in A, \ a\leq\alpha \ \ \forall a\in A 
+\hspace{1cm}
+\alpha = sup (A) \Longleftrightarrow 
+  \left\lbrace
+  \begin{array}{l}
+	  a\leq\alpha \ \  \forall a\in A \\
+	  \forall\epsilon\in\R ^+ , \ \exists a\in A \ : \ \alpha - \epsilon < a\\
+  \end{array}
+  \right.
+$$
+
+\textbf{Raíz n-ésima.}
+Dado $n\in\N$, para cada $x\in\R ^+$ existe un único $y\in\R ^+$ tal que $y^n=x$, $y=\sqrt[n]{x}$
+Dados $n,m\in\N$, $\sqrt[n]{m}$ es un número natural o un número irracional.
+
+\subsection{Propiedad arquimediana}
+$\N$ no está mayorado, $\forall x\in\R ,\ \exists n\in\N \ : \ n>x$.
+Sea $\emptyset\not =A\subset\Z$
+\begin{itemize}
+	\item Si $A$ está mayorado(minorado/acotada), entonces $A$ tiene máximo(mínimo/es finito).
+\end{itemize}
+\textbf{Función parte entera.} 
+$E(x) = max\{k\in\Z \ : \ k\leq x\}. \hspace{0.5cm} \forall x\in\R$, $E(x)\leq x\leq E(x)+1$
+
+\subsection{Densidad de $\Q$ y $\R\backslash\Q$ en $\R$}
+Un conjunto $D\subset \R$ es denso en $\R$ cuando, $\forall x,y\in\R \ : \ x<y, \ \exists d\in D \ : \ x<d<y$
+
+Para cualesquiera $x,y\in\R$ con $x<y$, existen $r\in\Q, \ \beta\in\R\backslash\Q$ verificando que $x<r<\beta <y$
+\begin{center}
+$\forall x\in\R ,  \ 
+sup\{ r\in\Q \ : \ r<x \} = x = inf\{ s\in\Q \ : \ s>x \}$	
+\end{center}
+
+
+\subsection{Intervalos}
+$I$ es un intervalo si $\forall x,y\in I : x<y$, entonces $\forall z\in\R$ con $x<z<y\implies z\in I$. La intersección de cualquier familia de intervalos es un intervalo. Todo intervalo no trivial es no numerable.
+
+\textbf{Principio de los intervalos encajados} (Georg Cantor):
+
+Suponemos que, para cada $n\in\N$ tenemos un intervalo cerrado y acotado $J_n=[a_n,b_n]$, con $a_n\leq b_n$, y cada uno de estos intervalos contiene al siguiente ($J_{n+1}\subset J_n$) para todo $n\in\N$. Entonces la intersección $\bigcap _{n\in\N}J_n$ no es vacía, es decir, existe $x\in\R$ tal que $x\in J_n$ para todo $n\in\N$.
+
+\subsection{Números alebraicos y trascendentes}
+Un número real es algebraico cuando se puede obtener como solución de una ecuación algrebraica con coeficientes enteros.
+Los números irracionales que hasta ahora conocemos son algebraicos. El conjunto de los números algebraicos es numerable.
+Un número real es trascendente cuando no es algebraico.
