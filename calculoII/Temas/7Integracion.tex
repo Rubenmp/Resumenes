@@ -1,0 +1,15 @@
+\section{Integración}
+$a,b\in\R$, $a<b$ y $f:[a,b]\rightarrow\R$ continua. 
+$\Pi[a,b]$ es el conjunto de las particiones de $[a,b]$, subconjuntos finitos de $[a,b]$ que contienen los extremos. 
+Tenemos las sumas inferiores y superiores, $P\in\Pi$
+$$ I(f,P) = \sum_{k=1}^{n} (\min f[t_{k-1}, t_k])(t_k-t_{k-1}) \hspace{1.5cm}\{ I(f,P):P\in\Pi[a,b]\} \text{ está mayorado}$$
+$$ S(f,P) = \sum_{k=1}^{n} (\max f[t_{k-1}, t_k])(t_k-t_{k-1}) \hspace{1.5cm}\{ S(f,P):P\in\Pi[a,b]\} \text{ está minorado}$$
+$$ \sup \{ I(f,P):P\in\Pi[a,b]\} \leq \inf \{ S(f,P):P\in\Pi[a,b]\}  $$
+\textbf{Lema} $\forall\epsilon>0, \exists\delta>0 : P\in\Pi[a,b], \ \Delta P<\delta \implies S(f,P)-I(f,P)<\epsilon$
+
+\textbf{Teorema de la integral de Cauchy}
+$$ \sup \{ I(f,P):P\in\Pi[a,b]\} = \inf \{ S(f,P):P\in\Pi[a,b]\} = \int_{a}^{b} f(x)dx = \limn \frac{b-a}{n}\sum_{k=1}^{n}f\left(a+\frac{k(b-a)}{n}\right)$$
+La integral es lineal, positiva $(\geq0)$ y aditiva, $c\in]a,b[, \ \int_a^b f= \int_a^c f + \int_c^b f$
+$$\left|\int_{a}^{b} f(x)dx\right| \leq \int_{a}^{b} |f(x)|dx$$
+
+Si $f\in C[a,b], \ \exists c\in[a,b] : f(c) = \frac{1}{b-a} \int_a^b f(x)dx$

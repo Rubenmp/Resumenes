@@ -1,0 +1,37 @@
+\section{Límite funcional}
+$\alpha\in\R$ es punto de acumulación de $A$ si existe  $\{x_n\}\rightarrow\alpha$ de puntos de $A\backslash\{\alpha \}$. 
+$A'$ es el conjunto de todos estos puntos.
+Los puntos $a\in A\backslash A'$ son aislados, toda función es continua allí.
+$$ \alpha\in A' \Longleftrightarrow
+]\alpha-\delta, \alpha +\delta[\cap(A\backslash\{\alpha\})\not =\emptyset \ \ \forall\delta>0 $$
+
+Son equivalentes:
+\begin{itemize}
+	\item $\lim_{x\rightarrow\alpha\in A'} f(x) = L\in\R$
+	\item $ x_n\in A\backslash\{\alpha\}\ \ \forall n\in\N, \ \{x_n\}\rightarrow\alpha \implies \{f(x_n)\}\rightarrow L \text{ (puede verse solamente con sucesiones monótonas)}$
+	\item $ \forall\epsilon>0, \ \exists\delta>0 \ : \ x\in A, \ 0<|x-\alpha|<\delta \implies |f(x)-L|<\epsilon $
+\end{itemize}
+
+Una función $f:A\rightarrow\R$ es continua en un punto $a\in A\cap A'$ si, y sólo si, $\lim_{x\rightarrow\alpha} f(x) = f(a)$
+
+Si una función tiene límite en $a\in A\cap A'$ pero $\lim_{x\rightarrow\alpha} f(x) \not=f(a)$ $f$ tiene una discontinuidad evitable en el punto $a$. Son equivalentes:
+\begin{itemize}
+	\item $f$ tiene límite en el punto $\alpha\in A\backslash A'$
+	\item Existe $f':A\cup\{\alpha\} \rightarrow\R$ continua en $\alpha$ con $f'(x)=f(x) \ \ \forall x\in A$
+\end{itemize}
+
+\subsection{Límites laterales}
+El límite tiene carácter local. 
+Consideramos los conjuntos $A_{\alpha}^- = \{x\in A \ : \ x<a\}$ y $A_{\alpha}^+ = \{x\in A \ : \ x>a\}$, $A$ se acumula a la izquierda (res. derecha) de $\alpha$ si $\forall\delta>0 \ ]\alpha-\delta, \alpha[\cap A \not =\emptyset$.
+Sea $\alpha\in (A_{\alpha}^-)'$
+$$ \lim_{x\rightarrow\alpha -} f(x) = L \Longleftrightarrow
+ [ x_n\in A, \ x_n<\alpha \ \forall n\in\N, \ \{x_n\}\rightarrow\alpha \implies \{f(x_n)\}\rightarrow L ] $$
+
+Las caracterizaciones anteriores para límite tienen su versión para límites laterales, en el  límite por la izquierda son sucesiones crecientes y $\alpha-\delta<x<\alpha$ en la caracterización $(\epsilon-\delta)$
+
+Si $A$ se acumula a la izquierda pero no a la derecha de $\alpha\ \ $ $ \lim_{x\rightarrow\alpha} f(x) = L \Longleftrightarrow
+ \lim_{x\rightarrow \alpha-} f(x) = L $
+
+Si límites laterales no coinciden, tenemos una discontinuidad de salto, en otro caso
+$$ \lim_{x\rightarrow\alpha} f(x) = L \Longleftrightarrow
+ \lim_{x\rightarrow\alpha-} f(x) = \lim_{x\rightarrow\alpha+} f(x) = L$$

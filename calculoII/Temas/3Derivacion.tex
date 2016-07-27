@@ -1,0 +1,26 @@
+\section{Derivación}
+\begin{center}
+$ f'(a) = \lim_{x\rightarrow a} \frac{f(x)-f(a)}{x-a} \hspace{1cm} a\in A\cap A' $
+\end{center}
+
+La derivabilidad tiene carácter local e implica la continuidad. 
+Las derivadas laterales se denotan por $f'(a-)$ y $f'(a+)$.
+Si $f$ es derivable por izquierda y derecha es continua, aunque las derivadas no coincidan. Existe un polinomio $P(x)$ que representa la recta tangente por el punto $a$
+
+$$ P(x) = f(a) + f'(a)(x-a) \ \ \forall x\in\R \hspace{2cm}
+\lim_{x\rightarrow a} \frac{f(x)-P(x)}{x-a} = 0$$
+
+Caracterización $(\epsilon-\delta)$ de la derivada
+$$ x\in A, \ |x-a|<\delta \implies |f(x)-f(a)-f'(a)(x-a)|\leq \epsilon |x-a| $$
+Si $f$ es derivable, $f$ es diferenciable con diferencial de $f$ en $a$,
+$ df(a)(h) = f'(a)h \hspace{0.5cm} \forall h\in\R $
+$$ f'(a) = \frac{df(a)}{dx} = \lim_{h\rightarrow 0}\frac{f(a+h)-f(a)}{h} $$
+
+La recta secante por los puntos es \  $p_1 = (x_1, y_1), \ p_2 = (x_2, y_2)$ es $\ y-y_1 = \frac{y_2-y_1}{x_2-x_1}(x-x_1)$
+
+La interpretación física de la derivada es la velocidad de variación de una magnitud física.
+
+Denotamos al conjunto de funciones derivables $D(A)$, al de continuas $C(A)$, a todas por $\mathscr{F}(A)$ en $A$:
+\begin{center}
+$ D(A) \subset C(A) \subset \mathscr{F}(A) $
+\end{center}

@@ -1,0 +1,41 @@
+\section{Funciones convexas}
+Una función será convexa cuando la gráfica de la restricción de $f$ a cualquier intervalo cerrado y acotado queda siempre por debajo del segmento que pasa por $(a,f(a)), (b,f(b))$
+
+Si $I$ es un intervalo no trivial, $f:I\rightarrow\R$ es convexa cuando
+$$ f((1-t)x+ty) \leq (1-t)f(x) + tf(y)\hspace{0.5cm}
+\forall x,y\in I,\ \forall t\in[0,1] $$
+
+$f$ es cóncava cuando $-f$ es convexa, si es convexa tiene pendiente creciente.
+
+\textbf{Lema de las tres secantes.}
+
+$f:I\rightarrow\R$ una función convexa. Entonces $\forall x_1,x_2,x_3\in I : x_1<x_2<x_3$
+$$ \frac{f(x_2)-f(x_1)}{x_2-x_1} \leq 
+   \frac{f(x_3)-f(x_1)}{x_3-x_1} \leq 
+   \frac{f(x_3)-f(x_2)}{x_3-x_2}$$
+   
+\textbf{Teorema.}
+$f:I\rightarrow\R$ convexa. Entonces $f$ es derivable por la izquierda y por la derecha, y por tanto es continua, $\forall a\in I^o$
+
+\begin{itemize}
+	\item $g:I\rightarrow\R$ creciente. Entonces $g$ tiene límite por la izquierda y por la derecha en todo punto $a\in I^o$
+	\item $f\in D^1(I)$, son equivalentes
+	\begin{itemize}
+		\item $f$ es convexa
+		\item $f'$ es creciente
+		\item $\forall a,x\in I$ se tiene que $f(x)\geq f(a)+f'(a)(x-a)$
+	\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+	\item $f\in C^1(I)\cap D^2(I^o)$. Entonces $f$ es convexa si, y sólo si, $f''(x)\geq 0 \ \forall x\in I^o$
+\end{itemize}
+\subsection{Ejemplos}
+Todo polinomio de primer orden es cóncavo y convexo  (Recíproco verdadero)
+
+La función potencia de exponente $\alpha\in\R$ es convexa cuando $\alpha\leq 0$ o $\alpha\geq1$, y cóncava cuando $0\leq\alpha\leq1$ (en $\R^+$)
+
+La exponencial es una función convexa y el logaritmo es una función cóncava
+
+El $\arctan x$ es una función convexa en $\R^+_0$ y cóncava en $\R^+_0$
+

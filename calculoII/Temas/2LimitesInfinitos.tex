@@ -1,0 +1,40 @@
+\section{Límites en el infinito, funciones divergentes}
+Sea $f:A\rightarrow\R$ y $A$ no mayorado:
+$$ \limx f(x) = L\in\R \Longleftrightarrow
+ [x_n\in A \ \forall n\in\N, \ \{x_n\}\rightarrow+\infty \implies \{f(x_n)\} \rightarrow L]$$
+$$ \limx f(x) = L \Longleftrightarrow \lim_{y\rightarrow0^+} f(1/y) = L $$
+Sea $A$ conjunto no mayorado, $f:A\rightarrow\R$, $L\in\R$, son equivalentes
+\begin{itemize}
+	\item $\limx f(x) = L$
+	\item $\forall\{x_n\}$ de puntos de $A$, creciente y no mayorada, $\{f(x_n)\}\rightarrow L$
+	\item $\forall\epsilon>0 \ \exists K\in\R \ : \ x>K \implies |f(x)-L|<\epsilon$
+\end{itemize}
+
+\subsection{Funciones divergentes en un punto}
+\begin{center}
+$ \lim_{x\rightarrow\alpha\in A'} f(x) = +\infty \Longleftrightarrow
+[x_n\in A\backslash\{\alpha\} \ \forall n\in\N, \{x_n\}\rightarrow\alpha \implies \{f(x_n)\}\rightarrow+\infty] $
+\end{center}
+
+ 
+$f$ diverge cuando $|f|$ diverge positivamente, son propiedades locales. Son equivalentes
+\begin{itemize}
+	\item $\{x_n\}\rightarrow\alpha$ monótona de puntos de $A\backslash\{\alpha\} \implies \{f(x_n)\} \rightarrow +\infty$
+	\item $\forall K\in\R, \ \exists\epsilon>0 \ : \ x\in A, 0<|x-\alpha|<\delta \implies f(x)>K$
+\end{itemize}
+Las nociones de divergencia lateral se deducen fácilmente. Si $A$ se acumula a ambos lados de $\alpha$
+$$ \lim_{x\rightarrow\alpha} f(x) = +\infty \Longleftrightarrow 
+\left\lbrace
+\begin{array}{l}
+ \lim_{x\rightarrow\alpha-} f(x) = +\infty \\
+ \lim_{x\rightarrow\alpha+} f(x) = +\infty \\
+\end{array}
+\right.
+$$
+
+\subsection{Divergencia en el infinito}
+La definición por sucesiones es equivalente con $L=+\infty$, solamente cambia la $3^a$ equivalencia
+\begin{itemize}
+	\item $\forall K\in\R \ \exists m\in\R \ : \ x\in A, \  x>M \implies f(x)>K$
+\end{itemize}
+$$\lim_{x\rightarrow\alpha} f(x)=\beta \text{ y $g$ es continua en $\beta$}, \ \lim_{x\rightarrow\alpha} (gof)(x) = g(\beta)$$

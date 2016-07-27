@@ -1,7 +1,7 @@
-calculoI.pdf: calculoI.tex ./Temas/* mrproper
-	pdflatex -shell-escape -interaction=nonstopmode -file-line-error calculoI.tex
+calculoII.pdf: calculoII.tex ./Temas/* mrproper
+	pdflatex -shell-escape -interaction=nonstopmode -file-line-error calculoII.tex
 	make mrproper
-	pdflatex -shell-escape -interaction=nonstopmode -file-line-error calculoI.tex
+	pdflatex -shell-escape -interaction=nonstopmode -file-line-error calculoII.tex
 	make mrproper
 
 

@@ -1,0 +1,29 @@
+\section{Potencias y logaritmos}
+\subsection{Logaritmo}
+$$ \forall x\in\R^+ \hspace{1cm}log x = \int_1^x \frac{dt}{t} \hspace{1.5cm}f'(x)=\frac{1}{x} $$
+El logaritmo es estrictamente creciente, diverge positivamente en $+\infty$ y negativamente en $0$
+$$ log \ (x/y) = log\ x-log\ y\hspace{1.5cm} log(x^n)=nlog\ x \hspace{1.5cm} log\ e=1$$
+
+\subsection{Exponencial}
+\begin{center}
+$ exp = log^{-1} \hspace{1.5cm} exp:\R\rightarrow\R^+ \hspace{0.3cm} \text{ es biyectiva} $
+\end{center}
+$$ exp(x-y) = exp\ x/exp\ y \hspace{1.2cm} exp(nx) = (exp\ x)^n \hspace{1.2cm} \lim_{x\rightarrow -\infty} exp\ x = 0\hspace{1.2cm} \lim_{x\rightarrow +\infty} exp\ x= +\infty$$
+
+\subsection{Potencias de exponente real}
+\begin{center}
+$ a^b = exp(blog\ a) \hspace{0.5cm} \forall b\in\R, \ \forall a\in\R^+ \hspace{1.5cm} a^x\text{ es derivable: }a^xlog \ a$
+\end{center}
+$$ a^{log_a\ y} = y \ \ \forall y\in\R+\hspace{1.5cm} log_a\ a^x = x\ \ \forall x\in\R \hspace{1.5cm} log_a\ x = \frac{log\ x}{log\ a}$$
+$log_a \ x$ con $a>1$ estrictamente creciente, $a<1$ estrictamente decreciente.
+\subsection{Escala de infinitos}
+$$ \forall p\in\R^+ \ \ \limx \frac{log\ x}{x^p} = \limx \frac{x^p}{e^x} = \lim_{x\rightarrow 0} x^p log\ x = 
+\limx x^{1/x} = \lim_{x\rightarrow0} x^x = 0 $$
+
+\subsection{Series armónicas y series de Bertrand}
+$$ \sum_{n\geq 1} \frac{1}{n^{\alpha}} \text{ converge si, y sólo si, } \alpha>1 $$
+$$ \sum_{n\geq 3} \frac{1}{n^{\alpha}(log\ n)^{\beta}} \text{ serie de Bertrand con exponentes }\alpha,\beta\in\R $$
+Converge cuando $\alpha>1$ y diverge cuando $\alpha<1$. Si $\alpha = 1$, converge si, y sólo si, $\beta>1$
+
+\subsection{Equivalencia logarítmica}
+Sea $\{x_n\}\rightarrow 1$, $\{y_n\}$, si $L\in\R$, entonces $\limn \ y_n(x_n-1) = L \Longleftrightarrow \limn x_n^{y_n} = e^L$ww
