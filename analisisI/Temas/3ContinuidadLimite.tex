@@ -4,3 +4,17 @@ $$ \forall V\in\mathcal{U}(f(x)) \ \exists U\in \mathcal{U}(x) : f(U) \subset V\
 \forall\epsilon>0 \ \exists\delta>0 : y\in E,\ d(y,x)<\delta \implies d(f(x),f(y))<\epsilon$$
 $$V\in\mathcal{U}(f(x)) \implies f^{-1}(V)\in\mathcal{U}(x)  \hspace{2cm}
 x_n\in E\ \forall n\in\N,\ \{x_n\}\rightarrow x\implies \{f(x_n)\}\rightarrow f(x) $$
+Sea $f:E\rightarrow F$, $\emptyset\not = A\subset E$. La restricción en el codominio no afecta a la continuidad, para $x\in A$
+\begin{itemize}
+	\item Si $f$ es continua en $x$, entonces $f|_A$ es continua en $x$
+	\item Si $f|_A$ es continua en $x$ y $A$ es entorno de $x$ en $E$, entonces $f$ es continua en $x$
+\end{itemize}
+Con respecto a la continuidad global, $f$ es continua equivale a
+\begin{itemize}
+	\item Para todo abierto $v\subset F$, se tiene que $f^{-1}(V)$ es un abierto de $E$
+	\item Para todo cerrado $C\subset F$, se tiene que $f^{-1}(C)$ es un cerrado de $E$
+	\item $f$ presenta la convergencia de sucesiones
+\end{itemize}
+
+\subsection{Límite funcional}
+Solamente tiene sentido hablar e límite de $f$ en puntos de acumulación de $A$
