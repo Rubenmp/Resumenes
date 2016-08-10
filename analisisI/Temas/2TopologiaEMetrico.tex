@@ -1,0 +1,49 @@
+\section{Topología de un espacio métrico}
+Bola abierta $B(x,r) = \{y\in E : d(x,y)<r \} = \{x+ru : u\in B(0,1) \}$, su aspecto cambio cuando utilizamos una norma distinta de la euclídea.
+Los abiertos de un espacio métrico son las uniones de bolas abiertas.
+Dos distancias son equivalentes cuando generan la misma topología, dos normas lo son si lo son sus distancias asociadas.
+Para dos normas $||\cdot||_1$ y $||\cdot||_2$ en un espacio vectorial equivalen:
+\begin{itemize}
+	\item $\exists p\in\R^+ : ||x||_2\leq p||x||_1 \ \forall x$
+	\item La topología de la norma $||x||_2$ está incluida en la de $||x||_1$
+\end{itemize}
+Todas las normas en $\R^N$ son equivalentes.
+Si $\tau$ es una topoloía en $E$ y $\tau_A$ la de un subespacio métrico
+$$ \tau_A = \{ U\cap A : U\in\tau \} \hspace{2cm}
+A^o = \bigcup \{U\in\tau : U\subset A \hspace{2cm}
+\overline{A} = \bigcap \{ C\in\mathcal{C} : A\in\mathcal{C} \}$$
+EL interior es el máximo abierto incluido en $A$, un conjunto es abierto si, y sólo si, es entorno de todos sus puntos. Un conjunto es denso en $\R$ si su adherencia es $\R$
+$$ x\in A^o \Longleftrightarrow A\in\mathcal{U}(x)
+\Longleftrightarrow \exists\epsilon>0 : B(x,\epsilon)\subset A $$
+$$ x\in\overline{A}\text{ punto adherente } \Longleftrightarrow
+U\cap A \not =0 \hspace{0.5cm} \forall U\in\mathcal{U}(x)\Longleftrightarrow
+B(x,\epsilon)\cap A \not=0 \hspace{0.5cm} \forall\epsilon\in\R^+ $$
+$$ E\backslash \overline{A} = (E\backslash A)^o \hspace{2cm}
+ E\backslash A^o = \overline{E\backslash A}$$
+
+
+En cualquier espacio métrico $E$, todo subconjunto finito de $E$ es cerrado. 
+$$ S(x,r) = \{ y\in E : d(y,x)=r \} = \overline{B}(x,r) \backslash B(x,r) $$
+$$ Fr(A) = \overline{A}\backslash A^o = \overline{A}\cap (E\backslash A^o) \hspace{2cm}
+Fr(A) = Fr(E\backslash A)  $$
+$$ A \text{ es abierto } \Longleftrightarrow A\cap Fr(A) =0 \hspace{2cm}
+A \text{ es cerrado }\Longleftrightarrow Fr(A)\subset A $$
+
+Cuando todos los puntos de $A$ son aislados es un subconjunto discreto, es decir $A\cap A'=0$. Equivale a que la topología inducida sea la discreta.
+En todo espacio métrico un punto es adherente a un conjunto si, y sólo si, existe una sucesión de puntos del conjunto que converge a él. 
+$$ x\in A' \Longleftrightarrow 
+U\cap (A\backslash\{x\}) \not=0 \hspace{0.5cm} \forall U\in\mathcal{U}(x)\Longleftrightarrow
+B(x,\epsilon) \cap (A\backslash\{x\}) \not =0\hspace{0.5cm} \forall\epsilon\in\R^+ $$
+$$ \{x_n\}\rightarrow x \Longleftrightarrow [\forall U\in\mathcal{U}(x) \ \exists m\in\N : n\geq m\implies x_n\in U] \Longleftrightarrow \{d(x_n,x)\}\rightarrow 0$$
+
+Sean $d_1,d_2$ distancias, equivalen
+\begin{itemize}
+	\item La topología generada por $d_1$ está incluida en la generada por $d_2$
+	\item Toda sucesión convergente para la distancia $d_2$ es convergente para $d_1$
+\end{itemize}
+Por tanto las distancias son equivalentes si, y sólo si, dan lugar a las mismas sucesiones convergentes.
+
+
+
+
+Para convertir un producto de espacios normados en normado podemos tomar la norma del máximo.

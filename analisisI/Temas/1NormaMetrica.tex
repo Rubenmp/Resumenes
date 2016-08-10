@@ -1,0 +1,43 @@
+\section{El espacio euclídeo, espacios normados y espacios métricos}
+
+$\R^n = \R \text{x}\R \text{x }\overset{(N)}{\cdots} \text{ x}\R$ con la suma y producto por escalares tiene estructura de espacio vectorial. La base usual es $\Phi =\{e_k : k\in I_N\}$ con $e_k(k)=1$ y $e_k(j) = 0 \ \forall j\in I_N\backslash \{k\}$.
+
+El producto escalar de dos vectores $x,y\in \R^N$ es $(x|y) = \sum_{k=1}^{N} x(k) y(k)$ cumple:
+\begin{itemize}
+	\item \textbf{(P.1)} $(\lambda u+\mu v) = \lambda (u|y) +\mu (v|y) \hspace{0.5cm} \forall u,v,y\in\R^N, \ \forall \lambda,\mu\in\R$
+	\item \textbf{(P.2)} $(x|y) = (y|x) \hspace{0.5cm} \forall x,y\in\R^N$
+	\item \textbf{(P.3)} $(x|x)>0 \hspace{0.5cm} \forall x\in\R^N\backslash\{0\}$
+\end{itemize}
+$\phi$ es una forma bilineal cuando es lineal en cada variable, simétrica si $\phi(x,y) = \phi(y,x)$. La forma cuadrática asociada se define como $Q(x) = \phi(x,x)$.
+Un espacio pre-hilbertiano es un espacio vectorial con un producto escalar. 
+
+La norma de un vector $x\in X$ es $||x|| = (x|x)^{1/2}$, intuitivamente es la longitud del vector. Cumple:
+\begin{itemize}
+	\item \textbf{(N.1)} $ ||x+y|| \leq ||x||+||y||\hspace{0.5cm} \forall x,y\in X \hspace{2cm} \text{(desigualdad triangular)}$
+	\item \textbf{(N.2)} $||\lambda x|| = |\lambda| \ ||x|| \hspace{0.5cm} \forall x\in X,\ \forall\lambda\in\R \hspace{2cm}(homogeneidad por homotecias)$
+	\item \textbf{(N.3)} $x\in X, \ ||x||=0 \implies x=0 \hspace{3cm} \text{(no degeneración)}$
+\end{itemize}
+\textbf{Desigualdad de Cauchy-Schwartz.} En todo espacio pre-hilbertiano X
+\begin{center}
+$ |(x|y)| \leq ||x|| \ ||y||\hspace{0.5cm}\forall x,y\in X
+\hspace{2cm} \text{Igualdad sii $x,y$ linealmente dependientes}  $
+\end{center}
+
+Un espacio normado es un espacio vectorial con una norma $||\cdot||$. Todo espacio pre-hilbertiano es normado. 
+Una norma puede no proceder de un producto escalar, ejemplo de ello son las normas del máximo y de la suma, con ellas $\R^N$ es espacio normado, no pre-hilbertiano.
+$$ ||x||_{\infty} =\max \{|x_k| : k\in \{1,2,\cdots,N\} \hspace{2cm} ||x||_1 = \sum_{k=1}^{N} |x_k| $$
+
+\subsection{Ortogonalidad/perpendicularidad}
+$$ x\perp y \overset{\vartriangle}{\Longleftrightarrow} 
+(x|y) = 0 \Longleftrightarrow
+|| x+y ||^2 = ||x||^2 + ||y||^2$$
+Un conjunto $A$ es ortogonal si $\forall x,y\in A, \ x\not =y, x\perp y$, se llama ortonormal si además $||x||=1 \ \forall x\in A$
+$$ \text{Ángulo entre vectores no nulos } \alpha (x,y)=\arccos \frac{(x|y)}{||x||\ ||y||}\in[0,\pi]  $$
+
+En un espacio normado se define la distancia por $d(x,y) = ||y-x||$. En cualquier conjunto definimos la distancia discreta como 
+$$ \sigma (x,y) = 
+\left\{ 
+\begin{array}{l}
+	0 \text{ si } x=y \\
+	1 \text{ si } x\not =y \\
+\end{array} \right.$$
