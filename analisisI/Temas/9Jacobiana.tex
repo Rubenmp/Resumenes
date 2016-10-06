@@ -1,0 +1,20 @@
+\section{Matriz jacobiana}
+Nos encargamos ahora de las aplicaciones $f:\R^N\rightarrow\R^M$ con $N,M>1$. Para todo $x\in\R^N\ \exists! Jf(a)\in\mathcal{M}_{M\text{x}N} : y=T(x)\in\R^M,y=Jf(a)x$. La matriz de la aplicación es única.
+$$ Jf(a) = \alpha_{kj}= Df(a)(e_j) = \frac{\partial f_k}{\partial x_j}(a) \hspace{0.5cm} \forall k\in I_M,\ \forall j\in I_N $$
+$$ Jf(a) = \left(
+\begin{matrix}
+	\frac{\partial f_1}{\partial x_1} (a) & 	\frac{\partial f_1}{\partial x_2} (a) & \cdots & \cdots 	\frac{\partial f_1}{\partial x_N} (a) \\
+	\frac{\partial f_2}{\partial x_1} (a) & 	\frac{\partial f_2}{\partial x_2} (a) & \cdots & \cdots 	\frac{\partial f_2}{\partial x_N} (a) \\	
+	\vdots & \vdots & & & \vdots \\
+	\frac{\partial f_M}{\partial x_1} (a) & 	\frac{\partial f_M}{\partial x_2} (a) & \cdots & \cdots 	\frac{\partial f_M}{\partial x_N} (a) \\	
+\end{matrix}
+\right) $$
+Cada columna de la matriz puede entenderse como una derivada parcial.
+
+Sea $U$ abierto de $\R^M$ tal que $f(\Omega) \subset U$ y $G:U\rightarrow \R^P, \ P\in\N$. Tomamos la composición $h=gof:\Omega\rightarrow\R^P$, suponemos $f$ diferenciable en $a$ y $g$ diferenciable en $f(a)$, por tanto
+$$ Dh(a) = Dg(f(a)) o Df(a) \hspace{2cm}
+z = (Jg(b)\cdot Jf(a))\cdot x\hspace{0.5cm}\forall x\in\R^N$$
+
+\subsection{Coordenadas polares en el plano}
+$M=N=2, \Omega=\R^+\text{x}]0,\pi[$, y $f:\Omega\rightarrow\R^2$ con componentes $x,y$. $f(\Omega)$ es el semiplano superior.
+$$ x(p,\theta) = p\cos \theta\hspace{1.5cm} y(p,\theta) = p\sin\theta\hspace{0.5cm} \forall (p,\theta)\in\Omega$$

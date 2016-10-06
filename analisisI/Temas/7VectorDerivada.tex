@@ -1,0 +1,22 @@
+\section{Vector derivada}
+Sea $Y$ espacio normado y $\Omega\subset\R$ abierto. Una función $f:\Omega\rightarrow Y$ es diferenciable en $a\in\Omega$ si, y sólo si, $f$ es derivable en $a$, la diferencial y el vector derivada quedan determinados por
+$$ f'(a) = Df(a)(1)\hspace{2cm} Df(a)(t) = tf'(a)\hspace{0.5cm} \forall t\in\R $$
+Si $f$ es derivable en $a\in\Omega$, entonces $\forall\epsilon>0,\ \exists\delta>0$ tal que
+$$ \left.
+	\begin{array}{l}
+		t_1,t_2\in J,\ t_1\not =t_2 \\
+		a-\delta<t_1\leq a\leq t_2<a+\delta \\
+	\end{array} \right\}
+\implies
+\left\|
+\frac{f(t_2)-f(t_1)}{t_2-t_1} -f'(a)\right\| \leq\epsilon
+$$
+$f=(f_1,f_2,\cdots,f_M)$ es derivable si, y sólo si lo es $\forall f_i$, entonces
+$$ f_k'(a) = \pi_k(f'(a))\hspace{0.5cm}\forall k\in I_M\hspace{2cm} 
+f'(a) = \sum_{k=1}^{M} f_k'(a)\cdot e_k$$
+
+Dada una función $\phi:A\subset\R\rightarrow\R^M$, $\phi (J)$ es una curva paramétrica en $\R^M$. 
+La recta tangente a la curva en el punto $\phi (a)$ es $R=\{ \phi(a)+t\phi'(a) : t\in\R \}$.
+Cuando $\phi'(a)\not=0$ $\phi(a)$ es un punto regular de la curva, en otro caso es un punto singular.
+Cuando la ordenada va en función de la abscisa se denomina curva explícita.
+Toda curva explícita puede verse como una paramétrica, el recíproco es falso.

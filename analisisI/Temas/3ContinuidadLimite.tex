@@ -1,4 +1,5 @@
 \section{Continuidad y límite funcional}
+Sean $E,F$ espacios métricos.
 Una función $f:E\rightarrow\R$ es continua en $x\in E$
 $$ \forall V\in\mathcal{U}(f(x)) \ \exists U\in \mathcal{U}(x) : f(U) \subset V\hspace{2cm}
 \forall\epsilon>0 \ \exists\delta>0 : y\in E,\ d(y,x)<\delta \implies d(f(x),f(y))<\epsilon$$
@@ -17,4 +18,33 @@ Con respecto a la continuidad global, $f$ es continua equivale a
 \end{itemize}
 
 \subsection{Límite funcional}
-Solamente tiene sentido hablar e límite de $f$ en puntos de acumulación de $A$
+Hablamos de límite de $f$ (carácter local) en puntos de acumulación. Sea $\alpha\in A'$, $L\in F$, $A\subset F$
+$$ \forall\epsilon>0\ \exists\delta>0 : x\in A, \ 0<d(x,\alpha)<\delta \implies d(f(x),L)<\epsilon$$
+$$ \lim_{x\rightarrow \alpha} f(x)=L \Longleftrightarrow
+\forall V\in\mathcal{U}(L) \ \exists U\in\mathcal{U}(\alpha) : f(U\cap (A\backslash\{x\})) \subset V$$
+$$ \lim_{x\rightarrow \alpha} f(x)=L \Longleftrightarrow
+ \text{ Para toda sucesión } \{x_n\} \text{ de puntos de } A\backslash\{\alpha\} : \{x_n\}\rightarrow\alpha \implies \{f(x_n)\}\rightarrow L$$
+ 
+Para $a\in A\cap A'$ $f$ es continua en $a$ si, y sólo si, $\lim_{x\rightarrow a} f(x) = f(a)$
+
+Sean $E,F,\Omega$ espacios métricos, $\emptyset\not =A\subset E$, $\emptyset\not = T\subset\Omega$, $f:A\rightarrow F$, $\tau: T\rightarrow E$ y $\omega\in T'$ si se verifica:
+$$ \lim_{t\rightarrow\omega} f(x) = \alpha\in E \hspace{1cm}\text{ y }\hspace{1cm}
+\tau(t) \in A\backslash\{\alpha\} \hspace{0.5cm} \forall t\in T\backslash\{\omega\}\text{ entonces $\alpha\in A'$ y }$$
+$$ \lim_{x\rightarrow\alpha} f(x) = L\in F\implies\lim_{t\rightarrow\omega} f(\tau(t)) = L $$
+
+La distancia y la norma son funciones continuas. El siguiente resultado es análogo para el límite funcional.
+
+Sea $E,F_i$ espacios métricos, $F=F_1\text{x}F_2\text{x}\cdots\text{x}F_m$ , entonces $f=(f_1,f_2,\cdots,f_M):E\rightarrow F$ es continua en $x\in E$ si, y sólo si, $f_k$ es continua en $x$ $\forall k\in \{1,2,\cdots,M\}$
+
+Siendo $f,g:E\rightarrow F,\ \Lambda:E\rightarrow\R$, con $E$ espacio métrico y $F$ espacio normado, entonces $(f+g)(x)$, $(\Lambda f)(x)$ preservan la continuidad.
+
+\subsection{Campos escalares y vectoriales}
+UN campo escalar es una función real de $N$-variables, un campo vectorial es una función de $N$-variables con codominio $R^{M>1}$. Para estudiar la continuidad o límites de un campo vectorial, basta trabajar con sus componentes.
+Una dirección en un espacio normado es un vector de norma 1, el conjunto de todas las direcciones es $\mathcal{S}$, para $u\in\mathcal{S}$
+$$ \lim_{x\rightarrow a} f(x) = L \Longleftrightarrow
+\lim_{t\rightarrow 0} f(a+tu) = L \text{ (límite direccional de $f$ en $a$ con dirección $u$)}$$
+Para que $f$ tenga límite en el punto $a$, es necesario (no suficiente, pero $L$ sería el único límite posible de $f$ en $a$) que existan todos estos límites direccionales y coincidan.
+La condición suficiente es que exista una función $\Psi:]0,r[\rightarrow \R$ verificando
+$$ |f(a+pu) - L|\leq \Psi(p) \hspace{0.5cm} \forall u\in\mathcal{S}\hspace{0.5cm} \forall p\in]0,r[\hspace{1cm}\text{ y }\hspace{1cm}
+\lim_{p\rightarrow 0} \Psi (p)=0$$
+$$ \text{Para $N=2$:}\hspace{1cm} |f(x_o+p\cos \ \theta, y_o+p\sin\ \theta)| \leq \Psi (p) \hspace{0.5cm} \forall\theta\in\R\hspace{0.5cm}\forall p\in]0,r[ $$

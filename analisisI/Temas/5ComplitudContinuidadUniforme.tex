@@ -1,0 +1,57 @@
+\section{Complitud y continuidad uniforme}
+$\{x_n\}$ es una sucesión de Cauchy en un espacio métrico cuando
+$$ \forall\epsilon>0, \ \exists m\in\N : p,q\geq m\implies d(x_p,x_q) \geq\epsilon$$
+En cualquier espacio métrico, toda sucesión convergente es una sucesión de Cauchy (recíproco falso). Tomando una distancia $p(x,y) = |e^y-e^y| \ \forall x,y\in\R$ y la sucesión $\{-n\}$ para la distancia $p$ es sucesión de cauchy pero no lo es para la distancia usual.
+
+Una distancia es completa cuando toda sucesión de Cauchy es convergente. La complitud no es una propiedad topológica, puede variar al cambiar la distancia.
+
+Un espacio normado cuya norma es completa (distancia asociada completa) se llama espacio de Banach.
+
+Un espacio pre-hilbertiano cuya norma (asociada al producto escalar) es completa se llama espacio de Hilbert.
+
+Dos normas equivalentes en un mismo espacio vectorial dan lugar a las mismas sucesiones de Cauchy.
+
+\textbf{Teorema.} Todo espacio normado de dimensión finita es un espacio de Banach. Por tanto, el espacio euclídeo N-dimensional es un espacio de Hilbert.
+
+Sea $E$ un espacio métrico y $A$ un subespacio métrico de $E$:
+\begin{itemize}
+	\item Si $A$ es completo, entonces $A$ es un subconjunto cerrado de $E$
+	\item Si $E$ es completo y $A$ es un subconjunto cerrado de $E$, entonces $A$ es completo
+\end{itemize}
+Si $X$ es un espacio normado arbitrario, todo subespacio de dimensión finita de $X$ es un subconjunto cerrado de $X$.
+Decimos que $f$ es uniformemente continua cuando
+$$ \forall\epsilon>0,\ \exists\delta>0 : x,y\in E, \ d(x,y)<\delta\implies d(f(x),f(y))<\epsilon $$
+Si $f$ es uniformemente continua y $\{x_n\},\{y_n\}$ dos sucesiones de puntos de $E$ con $\{d(x_n,y_n)\} \rightarrow 0$, entonces $\{d(f(x), f(y))\} \rightarrow 0$. Si $f$ no es uniformemente continua existen $\{x_n\},\{y_n\}$ de puntos de $E$ y existe $\epsilon>0 : d(x_n,y_n)<1/n\ \forall n\in\N$, pero $d(f(x_n), f(y_n))\geq\epsilon\ \forall n\in\N$
+La continuidad uniforme no es una propiedad local.
+
+\textbf{Teorema de Heine (pag 63)} Sean $E$ y $F$ espacios métricos y $f:E\rightarrow F$ una función continua. Si $E$ es compacto, entonces $f$ es uniformemente continua.
+
+Sean $E,F$ espacios métricos y $f:E\rightarrow F$ uniformemente continua. Si $\{x_n\}$ es sucesión de Cauchy en $E$, $\{f(x_n)\}$ es sucesión de Cauchy en $F$
+
+Sean $E,F$ espacios métricos, $F$ completo, $\emptyset \not =A\subset E$ y $f:A\rightarrow F$ uniformemente continua. Entonces existe una única función continua $g:\overline{A}\rightarrow F$ uniformemente continua que extiende a $f$
+
+Una función uniformemente continua puede dejar de serlo al cambiar la distancia de destino por otra equivalente, pero se mantiene con normas equivalentes.
+
+\subsection{Funciones lipschitzianas}
+Una función $f$ entre espacios métricos es lipschitziana cuando existe una constante $M\in\R^+_0$ tal que 
+$$ d(f(x), f(y)) \leq Md(x,y) \hspace{0.5cm} \forall x,y\in E\hspace{2cm}\text{lipschitziana$\implies$uniformemente continua}$$
+Si la constante de Lipschitz $M_0\leq 1$ se dice que $f$ es no expansiva, si es $M_0<1$ es contractiva
+\subsection{Teorema del punto fijo de Banach (pag 66)}
+Sea $E$ un espacio métrico completo y $f:E\rightarrow E$ contractiva. Entones $\exists !\ x\in E : f(x) = x$
+
+\textbf{Teorema}
+Sean $X,Y$ espacios normados y $T:X\rightarrow Y$ una aplicación lineal. Son equivalentes:
+\begin{itemize}
+	\item Existe $x_0\in X$ tal que $T$ es continua en $x_0$
+	\item $T$ es continua en $0$
+	\item $T$ es continua
+	\item $T$ es uniformemente continua
+	\item $T$ es lipschitziana
+	\item Existe $m\in\R^+_0$ tal que $||T(x)||\leq M||x||\hspace{0.5cm} \forall x\in X$
+	\item Si $A$ es un subconjunto acotado de $X$, entonces $T(A)$ es un subconjunto acotado de $Y$
+	\item $T$ está acotada en la bola cerrada unidad de $X$
+	\item $T$ está acotada en la esfera unidad de $X$
+\end{itemize}
+Si $X$ es un espacio normado de dimensión finita, toda aplicación lineal de $X$ en cualquier otro espacio normado.
+
+La norma de una aplicación lineal continua $T$, $||T||$, es la constante de Lipschitz de $T$

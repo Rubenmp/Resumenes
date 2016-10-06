@@ -1,0 +1,42 @@
+\section{Compacidad y conexión}
+La acotación no es una propiedad topológica, se conserva en un espacio normado ante normas equivalentes. 
+$A$ está acotado si, y sólo si, el conjunto $\{|y-x| : x,y\in A\}$ está mayorado, si, y sólo si, está contenido en una bola.
+Definimos el diámetro de un conjunto $diam\ A=\sup \{d(x,y) : x,y\in A\}=\sup \ A-\inf \ A$, $diam \ A=0\Longleftrightarrow A=\emptyset \text{ ó } A=\{x\}$
+
+En cualquier espacio métrico toda sucesión convergente está acotada. Dos distancias que dan lugar a las mismas sucesiones convergentes son equivalentes.
+$$ \forall x,y\in E \hspace{0.5cm}p(x,y) = \frac{d(x,y)}{1+d(x,y)}\text{ es distancia equivalente a d, con distintos conjuntos acotados} $$
+En un espacio normado todas las normas son equivalentes.
+Dos normas equivalentes en un espacio vectorial dan lugar a los mismos subconjuntos acotados.
+
+En un producto de espacios normados un conjunto está acotado si, y sólo si, la restricción a cada espacio normado está acotada. Equivalente para una sucesión acotada.
+
+\textbf{Teorema de Bolzano-Weierstrass. (pag 49)} Toda sucesión acoada de vectores de $\R^N$ admite una sucesión parcial convergente.
+	
+En todo espacio normado de dimensión infinita existe una sucesión acotada que no admite ninguna sucesión parcial convergente.
+
+En espacios métricos nuestro concepto de compacto (secuencialmente compacto) nos dice que toda sucesión de puntos del mismo admite una parcial convergente.
+Sea $E$ un espacio métrico y $A\subset E$:
+\begin{itemize}
+	\item Si $A$ es compacto, entonces $A$ es cerrado en $E$
+	\item Si $E$ es compacto y $A$ cerrado, entonces $A$ es compacto
+	\item Todo espacio métrico compacto está acotado
+	\item Un subconjunto de $\R^N$ es compacto si, y sólo si, es cerrado y acotado (conexo en $\R$ $\Longleftrightarrow$ intervalo)
+\end{itemize}
+\textbf{Teorema de Hausdorff.} Todas las normas en $\R^N$ son equivalentes
+
+Un espacio métrico es conexo cuando no se puede expresar como unión de dos subconjuntos abiertos, no vacíos y disjuntos.
+
+Para un espacio métrico $E$ son equivalentes
+\begin{itemize}
+	\item $E$ es conexo
+	\item La imagen de toda función continua de $E$ en $\R$ es un intervalo
+	\item Toda función continua de $E$ en $\{0,1\}$ es constante
+\end{itemize}
+Un subconjunto $E$ de un espacio vectorial $X$ es convexo cuando, para cualesquiera dos puntos de $E$, el segmento que los une está contenido en $E$, es decir, $ x,y\in E\implies \{ (1-t)x+ty : t\in[0,1] \} \subset E$
+
+Todo subconjunto convexo de un espacio normado es conexo.
+
+$E$ es conexo por arcos cuando, para cualesquiera $x,y\in E$ existe una función continua $f:[0,1]\rightarrow E$, tal que $f(0) = x$ y $f(1) = y$.
+\begin{center}
+	convexo $\implies$ conexo por arcos $\implies$ conexo
+\end{center}

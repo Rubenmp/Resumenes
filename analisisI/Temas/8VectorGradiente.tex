@@ -1,0 +1,41 @@
+\section{Vector gradiente}
+En este caso estudiamos funciones entre espacios normados $f:\R^N\rightarrow\R$ con $N>1$.
+
+Si $u\in S=\{ u\in\R^N : ||u||=1 \}$, $f$ es derivable en la dirección $u$, en el punto $a$ cuando $\sigma_u:]-r,r[\rightarrow Y, \sigma_u(t)=f(a+tu)\ \forall t\in]-r,r[$, es derivable en $0$
+$$ f_u'(a) = \sigma_u'(0) = \lim_{t\rightarrow 0} \frac{f(a+tu)-f(a)}{t}\in Y $$
+
+Sean $X,Y$ espacios normados, $\empty\not=\Omega\subset X$ abierto, $f:\Omega\rightarrow Y$. Si $f$ es diferenciable en $a\in\Omega$, entonces $f$ es direccionalmente derivable en $a$, y para todo $u\in X$ con $||u||=1$, se tiene $f_u'(a) = Df(a) (u)$
+
+Definimos las derivadas parciales
+$$ \frac{\partial f}{\partial x_j} (a) = f_{e_j}'(a) = \lim_{t\rightarrow 0} \frac{f(a+te_j)-f(a)}{t} $$
+Si esto ocurre en todas las direcciones decimos que $f$ es parcialmente derivable.
+
+Si $f$ es diferenciable en $a$, entonces $f$ es parcialmente derivable en $a$ con
+$$ \frac{\partial f}{\partial x_j} (a) = Df(a)(e_j) \hspace{0.5cm}\forall j\in I_N\hspace{2cm}
+\frac{\partial f}{\partial x} (x_0,y_0) = \lim_{x\rightarrow x_o} \frac{f(x,y_o)-f(x_0,y_0)}{x-x_0} $$
+Para calcular la derivada $x_j$ es la única variable, y tratar todas las demás como constantes.
+
+Si $f$ es diferenciable en $a$ para todo $x\in\R^N$
+$$ Df(a)(x) = \sum_{k=1}^{N} x_j\frac{\partial f}{\partial x_j} (a)\hspace{1.5cm}
+\nabla f(a) = \left( \frac{\partial f}{\partial x_1}(a), \frac{\partial f}{\partial x_2}(a),\cdots,\frac{\partial f}{\partial x_N}(a),   \right) = \sum_{j=1}^{N}\frac{\partial f}{\partial x_j} (a)e_j $$
+Son equivalentes
+\begin{itemize}
+	\item $f$ es diferenciable en $a$
+	\item $f$ es parcialmente derivable en $a$ y se verifica que
+	$$ \lim_{x\rightarrow a} \frac{f(x)-f(a)-(\nabla f(a) | x-a)}{||x-a||} = 0$$
+\end{itemize}
+en caso de que se cumplan ambas se tiene
+$$ Df(a)(x) = ( \nabla f(a) | x ) \hspace{0.5cm} \forall x\in\R^N$$
+Sea $\phi : L(\R^N,\R) \rightarrow \R^N$ la aplicación definida por $\phi(t) = \sum_{j=1}^{N} T(e_j) e_j$ para cada $T\in L(\R^N,\R)$. Se tiene que $\phi$ es lineal, biyectiva y conserva la norma, luego permite identificar totalmente los espacios normados $L(\R^N,\R)$ y $\R^N$
+
+Si el campo escalar $f$ es diferenciable en $a\in\Omega$, sus derivadas direccionales en el punto $a$ vienen dadas por
+$$ f_u'(a) = Df(a)(u) = (\nabla f(a) | u) \hspace{0.5cm} \forall u\in S\hspace{2cm}
+f_v'(a)$$
+Si $\nabla f(a)=0$ entonces $a$  es un punto crítico o estacionario del campo $f$.
+
+\subsection{Plano tangente a superficie explícita}
+Sea $S=Gr\ f = \{ (x,y,f(x,y)) : (x,y)\in\Omega \} \subset \R^3$ y $f:\Omega\rightarrow\R$ diferenciable en $(x_0,y_0)$ el plano $\Pi$ de ecuación
+$$ \frac{\partial f}{\partial x} (x_0,y_0)(x-x_0) + \frac{\partial f}{\partial y}(x_0,y_0)(y-y_0)-(z-z_0) = 0 $$
+es el plano tangente a la superficie $S$ en el punto $p=(x_0,y_0,z_0)$ y el vector normal que pasa por $p$ es
+$$ \left( \frac{\partial f}{\partial x} (x_0,y_0), \frac{\partial f}{\partial y}(x_0,y_0), -1 \right) \in\R^3$$
+Sin embargo solamente es una buena aproximación cuando $f$ es diferenciable en $(x_0,y_0)$
